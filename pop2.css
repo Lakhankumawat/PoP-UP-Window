@@ -44,6 +44,24 @@
     font-weight: 200;
     cursor:pointer;
 }
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(90deg); } 
+  }
+  @-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(90deg); } 
+  }
+  @keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+  }
+  
+ 
+  .X:hover  {
+    /* -webkit-animation:spin 500ms linear;*/  /* These are the vendor-prefixed properties offered by the relevant 
+  /* -moz-animation:spin 500ms linear; */     /*  rendering engines (-webkit for Chrome, Safari; -moz for Firefox, -o for Opera,
+                                                -ms for Internet Explorer) */
+     
+      animation:spin 300ms linear;
+  }
 .section{
     transition: 2s;
 }
