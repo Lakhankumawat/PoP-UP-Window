@@ -10,6 +10,7 @@ section = document.querySelector("section");
 
  });
 
+//This is a comment !
 
  X.addEventListener("click",function(){
   parent.style.display ="none";
